@@ -13,6 +13,6 @@ class Solution:
         res = []
         if root:
             res.append(root.val)
-            res = res + self.PreorderTraversal(root.left)
-            res = res + self.PreorderTraversal(root.right)
+            res = res + self.preorderTraversal(root.left)
+            res = res + self.preorderTraversal(root.right)
         return res
