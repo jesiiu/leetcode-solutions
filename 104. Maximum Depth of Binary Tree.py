@@ -11,10 +11,10 @@ class Solution(object):
     def maxDepth(self, root):
         if not root:
             return 0
-        
+
         if root.left == None and root.right == None:
             return 1
-        
+
         leftDepth = self.maxDepth(root.left) if self.left else 0
         rigthDepth = self.maxDepth(root.right) if self.right else 0
-        return max(leftDepth, rigthDepth) + 1 
+        return max(leftDepth, rigthDepth) + 1
